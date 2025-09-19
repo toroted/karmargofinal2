@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location - KARM Agro Farm</title>
+  <meta name="description" content="KARM Agro Farm is a community offering a peaceful village experience in the heart of Konkan.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+      <nav>
+      <div class="logo">🌾 KARM AGRO FARM</div>
+       <div class="hamburger" id="hamburgerMenu" aria-label="Open navigation" tabindex="0">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-key="home">Home</a></li>
+        <li><a href="about.html" data-key="about">About Us</a></li>
+        <li><a href="contact.html" data-key="contact">Contact</a></li>
+        <li><a href="location.html" data-key="location">Location</a></li>
+                <li><a href="activities.html" data-key="location">Activities</a></li>
+
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu ▼</button>
+        <div class="dropdown-content">
+  <a href="index.html" data-key="home">Home</a>
+  <a href="about.html" data-key="about">About Us</a>
+  <a href="contact.html" data-key="contact">Contact</a>
+  <a href="location.html" data-key="location">Location</a>
+  <a href="activities.html" data-key="location">Activities</a>
+</div>
+      </div>
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="mr">मराठी</option>
+      </select>
+    </nav>
+  </header>
+<main>
+           <h2 style="margin-left: 20px;">Location</h2>
+  <h3 style="margin-top:2em;margin-left: 20px;">Kharavte, Chiplun Location</h3>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.682837832099!2d73.52588531489236!3d17.55389998802659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be83e1e1f1e1e1f%3A0x1e1e1e1e1e1e1e1e!2sKharavte%2C%20Chiplun%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1694626345123!5m2!1sen!2sin"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</main>
+  <footer>
+    <p>&copy; 2025 KARM AGRO FARM. All rights reserved.</p>
+    <p><a href="terms.html">Terms and Policies</a></p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu toggle for mobile
+  const hamburger = document.getElementById('hamburgerMenu');
+  const navLinks = document.getElementById('navLinks');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+    // Optional: close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+});
+  </script>
+</body>
+</html>

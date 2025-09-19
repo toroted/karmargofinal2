@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - KARM Agro Farm</title>
+  <meta name="description" content="KARM Agro Farm is a community offering a peaceful village experience in the heart of Konkan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.survey-questions {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  max-width: 400px;
+  width: 100%;
+}
+.survey-questions .question {
+  margin-bottom: 18px;
+}
+.survey-questions label {
+  margin-left: 8px;
+}
+.survey-questions button {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.survey-questions button:hover {
+  background: #388e3c;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  gap: 32px; /* Optional: space between survey and form */
+}
+.contact-form {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  max-width: 400px;
+  width: 100%;
+}
+</style>
+<body>
+  <header>
+     <nav>
+      <div class="logo">🌾 KARM AGRO FARM</div>
+     <div class="hamburger" id="hamburgerMenu" aria-label="Open navigation" tabindex="0">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-key="home">Home</a></li>
+        <li><a href="about.html" data-key="about">About Us</a></li>
+        <li><a href="contact.html" data-key="contact">Contact</a></li>
+        <li><a href="location.html" data-key="location">Location</a></li>
+                <li><a href="activities.html" data-key="activities">Activities</a></li>
+
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+  <a href="index.html" data-key="home">Home</a>
+  <a href="about.html" data-key="about">About Us</a>
+  <a href="contact.html" data-key="contact">Contact</a>
+  <a href="location.html" data-key="location">Location</a>
+  <a href="activities.html" data-key="location">Activities</a>
+</div>
+      </div>
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="mr">मराठी</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    
+    <h2 style="margin-left: 0px;">Contact Us</h2>
+<!-- ...existing code... -->
+<!-- ...existing code... -->
+<div class="center-container">
+  <div class="survey-questions">
+    <div class="question">
+      <p data-key="q1">1) Do you have your own native place village?</p>
+      <label><input type="radio" name="q1" value="yes"> Yes</label>
+      <label><input type="radio" name="q1" value="no"> No</label>
+    </div>
+    <div class="question">
+      <p data-key="q2">2) Are you connected with your village?</p>
+      <label><input type="radio" name="q2" value="yes"> Yes</label>
+      <label><input type="radio" name="q2" value="no"> No</label>
+    </div>
+    <div class="question">
+      <p data-key="q3">3) How long before you visit your village?</p>
+      <label><input type="radio" name="q3" value="every_year"> Every Year</label>
+      <label><input type="radio" name="q3" value="occasionally"> Occasionally</label>
+      <label><input type="radio" name="q3" value="never"> Never</label>
+    </div>
+    <div class="question">
+      <p data-key="q4">4) Are you capable to spend a small amount for your family's enjoyment?</p>
+      <label><input type="radio" name="q4" value="yes"> Yes</label>
+      <label><input type="radio" name="q4" value="no"> No</label>
+    </div>
+    <div class="question">
+      <p data-key="q5">5) Your native place surrounded by?</p>
+      <label><input type="radio" name="q5" value="developed_city"> Developed city</label>
+      <label><input type="radio" name="q5" value="typical_village"> Typical Village</label>
+    </div>
+    <button id="surveySubmitBtn" type="button" style="margin-top: 10px;">Submit Survey</button>
+  </div>
+  <div id="contactFormContainer" style="display: none;">
+    <form class="contact-form" id="mainContactForm">
+      <h3>Contact Form</h3>
+  <label for="name" id="nameLabel">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+  <label for="contact" id="contactLabel">Contact:</label>
+  <input type="text" id="contact" name="contact" required><br>
+  <label for="email" id="emailLabel">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+  <label for="message">Message:<span style="color: #888; font-size: 0.95em;">(optional)</span></label>
+  <textarea id="message" name="user_message" ></textarea><br>
+  <button type="submit">Send</button>
+</form>
+    <div id="formSentMessage" style="display:none; text-align:center; font-size:1.2em; margin-top:24px;">
+       "Thank you! Your message has been sent. Our team will contact you shortly."
+
+
+    </div>
+  </div>
+</div>
+<div class="contact-info" style="text-align:center; margin-top:32px;">
+  <p data-key="mobile"><b>Mobile:</b> +91-9004630952 / +91-7977256331 / +91-9136921295</p>
+  <p data-key="address"><b>Address:</b> B-108, Shivprerna Apartment, Sec-29, CBD Belapur Railway Station, Navi Mumbai, 400614</p>
+  <p data-key="email"><b>E-mail:</b> karmagrofarm@gmail.com</p>
+</div>
+<!-- ...existing code... -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Survey validation
+  const surveySubmitBtn = document.getElementById('surveySubmitBtn');
+  const contactFormContainer = document.getElementById('contactFormContainer');
+  const surveyQuestionsDiv = document.querySelector('.survey-questions');
+
+  surveySubmitBtn.addEventListener('click', function() {
+    let allAnswered = true;
+    for (let i = 1; i <= 5; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      const questionP = document.querySelector(`p[data-key="q${i}"]`);
+      if (!selected) {
+        allAnswered = false;
+        questionP.style.color = 'red';
+      } else {
+        questionP.style.color = '';
+      }
+    }
+    if (allAnswered) {
+      surveyQuestionsDiv.style.display = 'none';
+      contactFormContainer.style.display = 'block';
+    }
+  });
+
+  // Contact form validation and sent message
+  const form = document.getElementById('mainContactForm');
+  const sentMsg = document.getElementById('formSentMessage');
+  const nameInput = document.getElementById('name');
+  const contactInput = document.getElementById('contact');
+  const nameLabel = document.getElementById('nameLabel');
+  const contactLabel = document.getElementById('contactLabel');
+
+  if(form) {
+    form.addEventListener('submit', function(e) {
+      let valid = true;
+
+      // Name validation
+      if (!nameInput.value.trim()) {
+        nameLabel.style.color = 'red';
+        valid = false;
+      } else {
+        nameLabel.style.color = '';
+      }
+
+      // Contact validation: not blank and only numbers
+      if (!contactInput.value.trim() || !/^\d+$/.test(contactInput.value.trim())) {
+        contactLabel.style.color = 'red';
+        valid = false;
+      } else {
+        contactLabel.style.color = '';
+      }
+
+      if (!valid) {
+        e.preventDefault();
+        return;
+      }
+      e.preventDefault();
+      form.style.display = 'none';
+      sentMsg.style.display = 'block';
+    });
+  }
+});
+</script>
+<!-- ...existing code... -->
+<!-- ...existing code... -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KARM AGRO FARM. All rights reserved.</p>
+    <p><a href="terms.html">Terms and Policies</a></p>
+</footer>
+  </footer>
+<script>// ...existing code...
+const translations = {
+  en: {
+    "contact-heading": "Contact Us",
+    "q1": "1) Do you have your own native place village?",
+    "q2": "2) Are you connected with your village?",
+    "q3": "3) How long before you visit your village?",
+    "q4": "4) Are you capable to spend a small amount for your family's enjoyment?",
+    "q5": "5) Your native place surrounded by?",
+    "yes": "Yes",
+    "no": "No",
+    "every_year": "Every Year",
+    "occasionally": "Occasionally",
+    "never": "Never",
+    "developed_city": "Developed city",
+    "typical_village": "Typical Village",
+    "submit": "Submit Survey",
+    "mobile": "<b>Mobile:</b> +91-9004630952 / +91-7977256331 / +91-9136921295",
+    "address": "<b>Address:</b> B-108, Shivprerna Apartment, Sec-29, CBD Belapur Railway Station, Navi Mumbai, 400614",
+    "email": "<b>E-mail:</b> karmagrofarm@gmail.com"
+  },
+  hi: {
+    "contact-heading": "संपर्क करें",
+    "q1": "1) क्या आपके पास अपना पैतृक गाँव है?",
+    "q2": "2) क्या आप अपने गाँव से जुड़े हुए हैं?",
+    "q3": "3) आप अपने गाँव कितने समय बाद जाते हैं?",
+    "q4": "4) क्या आप अपने परिवार की खुशी के लिए थोड़ा खर्च करने में सक्षम हैं?",
+    "q5": "5) आपका गाँव किससे घिरा हुआ है?",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "every_year": "हर साल",
+    "occasionally": "कभी-कभी",
+    "never": "कभी नहीं",
+    "developed_city": "विकसित शहर",
+    "typical_village": "पारंपरिक गाँव",
+    "submit": "सर्वे सबमिट करें",
+    "mobile": "<b>मोबाइल:</b> +91-9004630952 / +91-7977256331 / +91-9136921295",
+    "address": "<b>पता:</b> B-108, शिवप्रेरणा अपार्टमेंट, सेक्टर-29, CBD बेलापुर रेलवे स्टेशन, नवी मुंबई, 400614",
+    "email": "<b>ई-मेल:</b> karmagrofarm@gmail.com"
+  },
+  mr: {
+    "contact-heading": "संपर्क करा",
+    "q1": "1) तुमच्याकडे स्वतःचे गाव आहे का?",
+    "q2": "2) तुम्ही तुमच्या गावाशी जोडलेले आहात का?",
+    "q3": "3) तुम्ही किती वेळाने गावाला जाता?",
+    "q4": "4) कुटुंबाच्या आनंदासाठी थोडा खर्च करण्यास सक्षम आहात का?",
+    "q5": "5) तुमचे गाव कशाने वेढले आहे?",
+    "yes": "होय",
+    "no": "नाही",
+    "every_year": "दर वर्षी",
+    "occasionally": "कधीमधी",
+    "never": "कधीच नाही",
+    "developed_city": "विकसित शहर",
+    "typical_village": "परंपरागत गाव",
+    "submit": "सर्वे सबमिट करा",
+    "mobile": "<b>मोबाईल:</b> +91-9004630952 / +91-7977256331 / +91-9136921295",
+    "address": "<b>पत्ता:</b> B-108, शिवप्रेरणा अपार्टमेंट, सेक्टर-29, CBD बेलापूर रेल्वे स्टेशन, नवी मुंबई, 400614",
+    "email": "<b>ई-मेल:</b> karmagrofarm@gmail.com"
+  }
+};
+
+function updateLanguage(lang) {
+  document.querySelectorAll("[data-key]").forEach(el => {
+    const key = el.getAttribute("data-key");
+    if (translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+}
+
+document.getElementById("languageSwitcher").addEventListener("change", function() {
+  updateLanguage(this.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateLanguage(document.getElementById("languageSwitcher").value);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu toggle for mobile
+  const hamburger = document.getElementById('hamburgerMenu');
+  const navLinks = document.getElementById('navLinks');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+    // Optional: close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+});
+
+</script>
+
+</body>
+</html>

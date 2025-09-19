@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - KARM Agro Farm</title>
+  <meta name="description" content="KARM Agro Farm is a community offering a peaceful village experience in the heart of Konkan.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+   
+     <nav>
+      <div class="logo">🌾 KARM AGRO FARM</div>
+      <div class="hamburger" id="hamburgerMenu" aria-label="Open navigation" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-key="home">Home</a></li>
+        <li><a href="about.html" data-key="about">About Us</a></li>
+        <li><a href="contact.html" data-key="contact">Contact</a></li>
+        <li><a href="location.html" data-key="location">Location</a></li>
+                <li><a href="activities.html" data-key="location">Activities</a></li>
+
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu ▼</button>
+        <div class="dropdown-content">
+          <a href="index.html" data-key="home">Home</a>
+          <a href="about.html" data-key="about">About Us</a>
+          <a href="contact.html" data-key="contact">Contact</a>
+          <a href="location.html" data-key="location">Location</a>
+        <a href="activities.html" data-key="location">Activities</a>
+
+        </div>
+      </div>
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="mr">मराठी</option>
+      </select>
+    </nav>
+   
+  </header>
+
+  <main>
+    <h2 style="margin-left: 20px;" data-key="about-heading">About Us</h2>
+  <div id="about-content" style="margin-left: 20px;">
+    <section class="hero">
+      <h1 data-key="about-hero1-title">Do you ever feel disconnected from your culture or roots?  Do you wish you had a peaceful place to go, a sanctuary from the city?</h1>
+      <p data-key="about-hero1-subtitle">If you've been looking for a place to truly belong, your search is over.<b> Karm Agro Farm offers you a chance to own your own village experience for 
+      <span style="color: red;">10 years </span>, for a one-time price of just <span style="color: red;">₹2 Lakh.</span></b> This is not just a place for the wealthy, it's a home for those who have no village.</p>
+    </section>
+    <section class="hero">
+      <h1 data-key="about-hero2-title">Building a Legacy:</h1>
+      <p data-key="about-hero2-subtitle">Our goal is to ensure that future generations, especially urban kids, stay connected to their culture, the soil, and the timeless appeal of village life.</p>
+    </section>
+  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KARM AGRO FARM. All rights reserved.</p>
+    <p><a href="terms.html">Terms and Policies</a></p>
+  </footer>
+ <script>
+  // ...existing code...
+const translations = {
+  en: {
+    "about-heading": "About Us",
+    "about-hero1-title": "Do you ever feel disconnected from your culture or roots?  Do you wish you had a peaceful place to go, a sanctuary from the city?",
+    "about-hero1-subtitle": "If you've been looking for a place to truly belong, your search is over.<b> Karm Agro Farm offers you a chance to own your own village experience for <span style='color: red;'>10 years </span>, for a one-time price of just <span style='color: red;'>₹2 Lakh.</span></b> This is not just a place for the wealthy, it's a home for those who have no village.",
+    "about-hero2-title": "Building a Legacy:",
+    "about-hero2-subtitle": "Our goal is to ensure that future generations, especially urban kids, stay connected to their culture, the soil, and the timeless appeal of village life."
+  },
+  hi: {
+    "about-heading": "हमारे बारे में",
+    "about-hero1-title": "क्या आप कभी अपनी संस्कृति या जड़ों से कटे हुए महसूस करते हैं? क्या आप चाहते हैं कि आपके पास जाने के लिए एक शांत जगह हो, शहर से दूर एक शरणस्थली?",
+    "about-hero1-subtitle": "अगर आप सच में किसी जगह से जुड़ना चाहते हैं, तो आपकी खोज अब खत्म हुई।<b> कर्म एग्रो फार्म आपको <span style='color: red;'>10 वर्षों</span> के लिए अपना खुद का गाँव अनुभव करने का मौका देता है, सिर्फ एक बार <span style='color: red;'>₹2 लाख</span> में।</b> यह सिर्फ अमीरों के लिए जगह नहीं है, बल्कि उन लोगों के लिए घर है जिनका कोई गाँव नहीं है।",
+    "about-hero2-title": "विरासत का निर्माण:",
+    "about-hero2-subtitle": "हमारा लक्ष्य है कि आने वाली पीढ़ियाँ, खासकर शहरी बच्चे, अपनी संस्कृति, मिट्टी और गाँव के जीवन के शाश्वत आकर्षण से जुड़े रहें।"
+  },
+  mr: {
+    "about-heading": "आमच्याबद्दल",
+    "about-hero1-title": "कधी तुम्हाला तुमच्या संस्कृतीपासून किंवा मुळांपासून दूर असल्यासारखे वाटते का? तुम्हाला शहरापासून दूर शांतता मिळवणारे ठिकाण हवे आहे का?",
+    "about-hero1-subtitle": "जर तुम्ही खरोखर कुठेतरी आपलेपण शोधत असाल, तर तुमचा शोध इथे संपतो.<b> कर्म अ‍ॅग्रो फार्म तुम्हाला <span style='color: red;'>१० वर्षांसाठी</span> स्वतःचे गाव अनुभवण्याची संधी देते, फक्त एकदाच <span style='color: red;'>₹२ लाख</span> मध्ये.</b> हे फक्त श्रीमंतांसाठी नाही, तर ज्यांच्याकडे गाव नाही त्यांच्यासाठी घर आहे.",
+    "about-hero2-title": "वारसा निर्माण करणे:",
+    "about-hero2-subtitle": "आमचे उद्दिष्ट आहे की पुढील पिढ्या, विशेषतः शहरी मुले, त्यांच्या संस्कृतीशी, मातीशी आणि गावाच्या जीवनाच्या शाश्वत आकर्षणाशी जोडलेले राहावेत."
+  }
+};
+
+function updateLanguage(lang) {
+  document.querySelectorAll("[data-key]").forEach(el => {
+    const key = el.getAttribute("data-key");
+    if (translations[lang][key]) {
+      if (translations[lang][key].includes("<b>") || translations[lang][key].includes("<span")) {
+        el.innerHTML = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
+    }
+  });
+}
+
+document.getElementById("languageSwitcher").addEventListener("change", function() {
+  updateLanguage(this.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateLanguage(document.getElementById("languageSwitcher").value);
+});
+// ...existing code...
+document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu toggle for mobile
+  const hamburger = document.getElementById('hamburgerMenu');
+  const navLinks = document.getElementById('navLinks');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+    // Optional: close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+});
+ </script>
+</body>
+</html>

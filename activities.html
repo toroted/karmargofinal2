@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities - KARM Agro Farm</title>
+  <meta name="description" content="KARM Agro Farm is a community offering a peaceful village experience in the heart of Konkan.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+   
+     <nav>
+      <div class="logo">🌾 KARM AGRO FARM</div>
+    <div class="hamburger" id="hamburgerMenu" aria-label="Open navigation" tabindex="0">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-key="home">Home</a></li>
+        <li><a href="about.html" data-key="about">About Us</a></li>
+        <li><a href="contact.html" data-key="contact">Contact</a></li>
+        <li><a href="location.html" data-key="location">Location</a></li>
+        <li><a href="activities.html" data-key="location">Activities</a></li>
+
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu ▼</button>
+        <div class="dropdown-content">
+  <a href="index.html" data-key="home">Home</a>
+  <a href="about.html" data-key="about">About Us</a>
+  <a href="contact.html" data-key="contact">Contact</a>
+  <a href="location.html" data-key="location">Location</a>
+  <a href="activities.html" data-key="location">Activities</a>
+</div>
+      </div>
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="mr">मराठी</option>
+      </select>
+    </nav>
+  </header>
+  <main>
+       <h2 style="margin-left: 20px;">Activities</h2>
+
+     <section class="hero">
+    <h1 data-key="title"> A Taste of Village Life:</h1>
+    <p data-key="subtitle"> At Karma Agro Farm, every day is an opportunity to connect with nature and your community.</p>
+  </section>
+
+   <section class="info">
+    <h2 data-key="proverb-title">On Site Activities:  </h2>
+<!-- ...existing code... -->
+<p data-key="proverb1"><b style="margin-left: 5px;">  Hands-on Farming :-</b> Work the land, earn your meal. As a member, you have the opportunity to work in the fields for three consecutive hours, and your meal for that time will be covered by the farm management.
+A place for every season. Whether you’re retired and looking for a peaceful retreat or a family wanting to get your hands dirty, you can experience life on the farm at your own pace.  </p>
+<p data-key="proverb2"><b style="margin-left:0px;">Festivals and Celebrations :-</b> Join us for annual festivals like Dhulivandan (Holi), Kojagiri Pournima, Diwali, Gudi Padwa, and many more.
+Stay informed. You can participate in any of the celebrations at your convenience, and we'll provide all the information you need for each festival beforehand.
+
+
+Patron deity celebrations. You can also join in the local festivities, such as the Kharavte Gram Devta Palkhi procession </p>
+<p data-key="proverb3"><b>Your Home Away From Home :-</b> Enjoy healthy, home-cooked meals prepared on a non-profit basis. The farm management is responsible for the health of the food.
+Need to unwind? If you are retired, this is your own place where you can relax and live life at a comfortable pace.
+Stay connected. Free Wi-Fi will be provided as needed, so you can share your experiences with friends and family.</p>
+<!-- ...existing code... -->
+  </section>
+  </main>
+  
+  <footer>
+  <p>&copy; 2025 KARM AGRO FARM. All rights reserved.</p>
+    <p><a href="terms.html">Terms and Policies</a></p>
+  </footer>
+  <script>
+    // ...existing code...
+const translations = {
+  en: {
+    "title": "A Taste of Village Life:",
+    "subtitle": "At Karma Agro Farm, every day is an opportunity to connect with nature and your community.",
+    "proverb-title": "On Site Activities:",
+    "proverb1": "<b style='margin-left: 5px;'>Hands-on Farming :-</b> Work the land, earn your meal. As a member, you have the opportunity to work in the fields for three consecutive hours, and your meal for that time will be covered by the farm management. A place for every season. Whether you’re retired and looking for a peaceful retreat or a family wanting to get your hands dirty, you can experience life on the farm at your own pace.",
+    "proverb2": "<b style='margin-left:0px;'>Festivals and Celebrations :-</b> Join us for annual festivals like Dhulivandan (Holi), Kojagiri Pournima, Diwali, Gudi Padwa, and many more. Stay informed. You can participate in any of the celebrations at your convenience, and we'll provide all the information you need for each festival beforehand. Patron deity celebrations. You can also join in the local festivities, such as the Kharavte Gram Devta Palkhi procession.",
+    "proverb3": "<b>Your Home Away From Home :-</b> Enjoy healthy, home-cooked meals prepared on a non-profit basis. The farm management is responsible for the health of the food. Need to unwind? If you are retired, this is your own place where you can relax and live life at a comfortable pace. Stay connected. Free Wi-Fi will be provided as needed, so you can share your experiences with friends and family."
+  },
+  hi: {
+    "title": "गाँव के जीवन का स्वाद:",
+    "subtitle": "कर्मा एग्रो फार्म में हर दिन प्रकृति और समुदाय से जुड़ने का अवसर है।",
+    "proverb-title": "स्थल पर गतिविधियाँ:",
+    "proverb1": "<b style='margin-left: 5px;'>हाथों से खेती :-</b> ज़मीन पर काम करें, अपना भोजन कमाएँ। सदस्य के रूप में, आपको खेत में लगातार तीन घंटे काम करने का अवसर मिलता है, और उस समय का भोजन फार्म प्रबंधन द्वारा दिया जाएगा। हर मौसम के लिए जगह। चाहे आप रिटायर हों और शांति चाहते हों या परिवार के साथ खेत में काम करना चाहते हों, आप अपने तरीके से गाँव का जीवन अनुभव कर सकते हैं।",
+    "proverb2": "<b style='margin-left:0px;'>त्योहार और उत्सव :-</b> हमारे वार्षिक त्योहारों जैसे धुलिवंदन (होली), कोजागिरी पूर्णिमा, दिवाली, गुड़ी पड़वा आदि में शामिल हों। जानकारी प्राप्त करें। आप अपनी सुविधा अनुसार किसी भी उत्सव में भाग ले सकते हैं, और हम आपको हर त्योहार की जानकारी पहले ही देंगे। ग्राम देवता उत्सव। आप स्थानीय उत्सवों जैसे खरवटे ग्राम देवता पालखी में भी भाग ले सकते हैं।",
+    "proverb3": "<b>आपका घर, घर से दूर :-</b> स्वादिष्ट, घर का बना और स्वास्थ्यवर्धक भोजन गैर-लाभकारी आधार पर दिया जाता है। फार्म प्रबंधन भोजन की गुणवत्ता का ध्यान रखता है। आराम करना है? यदि आप रिटायर हैं, तो यह आपकी जगह है जहाँ आप आराम से रह सकते हैं। जुड़े रहें। आवश्यकतानुसार मुफ्त वाई-फाई मिलेगा, ताकि आप अपने अनुभव दोस्तों और परिवार के साथ साझा कर सकें।"
+  },
+  mr: {
+    "title": "गावाच्या जीवनाचा स्वाद:",
+    "subtitle": "कर्मा अ‍ॅग्रो फार्ममध्ये प्रत्येक दिवस हा निसर्ग आणि समुदायाशी जोडण्याची संधी आहे.",
+    "proverb-title": "स्थळी क्रियाकलाप:",
+    "proverb1": "<b style='margin-left: 5px;'>हाताने शेती :-</b> शेतात काम करा, जेवण मिळवा. सदस्य म्हणून तुम्हाला सलग तीन तास शेतात काम करण्याची संधी मिळते, आणि त्या वेळचे जेवण फार्म व्यवस्थापनाकडून दिले जाते. प्रत्येक ऋतूसाठी जागा. निवृत्त व्यक्तींसाठी शांतता किंवा कुटुंबासाठी शेतात काम करण्याची इच्छा असो, तुम्ही आपल्या गतीने गावचे जीवन अनुभवू शकता.",
+    "proverb2": "<b style='margin-left:0px;'>सण आणि उत्सव :-</b> धुळिवंदन (होळी), कोजागिरी पौर्णिमा, दिवाळी, गुढीपाडवा आणि इतर वार्षिक सणांमध्ये सहभागी व्हा. माहिती मिळवा. तुम्ही आपल्या सोयीने कोणत्याही उत्सवात सहभागी होऊ शकता, आणि आम्ही प्रत्येक सणाची माहिती आधीच देऊ. ग्राम देवता उत्सव. तुम्ही स्थानिक उत्सवांमध्ये, जसे खरवटे ग्राम देवता पालखी, सहभागी होऊ शकता.",
+    "proverb3": "<b>घरापासून दूर, तुमचे घर :-</b> स्वादिष्ट, घरगुती आणि आरोग्यदायी जेवण नफा न घेता दिले जाते. फार्म व्यवस्थापन अन्नाच्या गुणवत्तेची जबाबदारी घेतो. विश्रांती हवी आहे? निवृत्त असाल तर ही तुमची जागा आहे जिथे तुम्ही आरामात राहू शकता. जोडलेले रहा. आवश्यकतेनुसार मोफत वाय-फाय दिला जाईल, त्यामुळे तुम्ही तुमचे अनुभव मित्र आणि कुटुंबासोबत शेअर करू शकता."
+  }
+};
+
+function updateLanguage(lang) {
+  document.querySelectorAll("[data-key]").forEach(el => {
+    const key = el.getAttribute("data-key");
+    if (translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+}
+
+document.getElementById("languageSwitcher").addEventListener("change", function() {
+  updateLanguage(this.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateLanguage(document.getElementById("languageSwitcher").value);
+});
+// ...existing code...
+document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu toggle for mobile
+  const hamburger = document.getElementById('hamburgerMenu');
+  const navLinks = document.getElementById('navLinks');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+    // Optional: close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+});
+  </script>
+  </body>
+  </html>
